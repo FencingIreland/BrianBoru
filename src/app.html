@@ -1,0 +1,77 @@
+<template>
+   <require from="materialize/bin/materialize.css"></require>
+   <require from="./styles/main.css"></require>
+   <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+        your browser</a> to improve your experience.</p>
+    <![endif]-->
+   <header>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="nav-wrapper black-text">
+                  <div class="container">
+                       <a href="#" alt="Brian Boru Fencing Club" class="brand-logo logo"></a>
+                       <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+                       <ul class="right hide-on-med-and-down">
+                           <li><a href="#" class="black-text">Courses and lessons</a></li>
+                           <li><a href="#" class="black-text">Where and when</a></li>
+                           <li><a href="#" class="black-text">Contact Us</a></li>
+                       </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#" class="black-text">Courses and lessons</a></li>
+            <li><a href="#" class="black-text">Where and when</a></li>
+            <li><a href="#" class="black-text">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <router-view></router-view>
+
+    <footer class="page-footer blue-grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Us</h5>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea" class="materialize-textarea"></textarea>
+                                <label for="textarea">Message</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Fencing Ireland</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Pentathlon Ireland</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue-grey darken-4">
+            <div class="container">
+                <span class="grey-text left" href="#!">© 2016 Boru Fencing ClubContact the Venue | Tel: 01 555 5555 | Email: <a>info@borufencing.ie</a></span>
+
+                <a class="grey-text right" href="#!">A site by Handsome Software</a>
+
+            </div>
+        </div>
+    </footer>
+</template>
