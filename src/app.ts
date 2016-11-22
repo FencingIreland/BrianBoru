@@ -1,5 +1,5 @@
 import {RouterConfiguration, Router} from 'aurelia-router';
-import 'materialize-css';
+import {routes} from './app-routes';
 
 export class App {
   router : Router;
@@ -7,9 +7,7 @@ export class App {
   configureRouter(config: RouterConfiguration, router: Router): void {
     this.router = router;
     config.title = 'Brian Boru Fencing Club';
-    config.map([
-      { route: ['', 'home'],       name: 'home',       moduleId: 'home/home' }
-    ]);
+    config.map(routes);
   }
 
   attached(){

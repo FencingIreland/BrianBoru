@@ -13,9 +13,9 @@
                        <a href="#" alt="Brian Boru Fencing Club" class="brand-logo logo"></a>
                        <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
                        <ul class="right hide-on-med-and-down">
-                           <li><a href="#" class="black-text">Courses and lessons</a></li>
-                           <li><a href="#" class="black-text">Where and when</a></li>
-                           <li><a href="#" class="black-text">Contact Us</a></li>
+                           <li repeat.for="route of router.navigation">
+                               <a class="black-text" href.bind="route.href">${route.title}</a>
+                           </li>
                        </ul>
                   </div>
                 </div>
@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Contact Us</h5>
+                    <h5 id="contact-us" class="white-text">Contact Us</h5>
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
