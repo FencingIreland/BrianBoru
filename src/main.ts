@@ -1,6 +1,6 @@
 import {Aurelia} from 'aurelia-framework';
 import environment from './environment';
-
+import 'materialize-css';
 
 //Configure Bluebird Promises.
 (<any>Promise).config({
