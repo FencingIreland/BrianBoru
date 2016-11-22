@@ -134,13 +134,18 @@
             "deps": ["jquery"]
           },
           {
-            "name": "materialize",
-            "path": "../node_modules/materialize-css",
-            "main": "js/materialize.js",
+            "name": "materialize-css",
+            "path": "../node_modules/materialize-css/dist",
+            "main": "js/materialize.amd",
             "deps": ["jquery", "hammerjs"],
             "resources": [
-                "bin/materialize.css"
+                "css/materialize.css"
             ]
+          },
+          {
+            "name": "lodash",
+            "path": "../node_modules/lodash",
+            "main": "lodash.min"
           }
         ]
       }

@@ -1,5 +1,6 @@
-import {Aurelia} from 'aurelia-framework'
+import {Aurelia} from 'aurelia-framework';
 import environment from './environment';
+
 
 //Configure Bluebird Promises.
 (<any>Promise).config({

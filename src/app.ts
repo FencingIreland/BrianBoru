@@ -1,4 +1,5 @@
 import {RouterConfiguration, Router} from 'aurelia-router';
+import 'materialize-css';
 
 export class App {
   router : Router;
@@ -9,5 +10,9 @@ export class App {
     config.map([
       { route: ['', 'home'],       name: 'home',       moduleId: 'home/home' }
     ]);
+  }
+
+  attached(){
+    $('.button-collapse').sideNav();
   }
 }
