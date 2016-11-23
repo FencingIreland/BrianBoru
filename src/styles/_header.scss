@@ -1,16 +1,19 @@
-header nav {
-    height: 100px;
-    line-height: 100px;
-    .logo{
-        display: block;
-        text-indent: -9999px;
-        width: 120px;
+header{
+    margin-bottom: 50px;
+    nav {
         height: 100px;
-        background: url(/img/logo_club.svg);
-        background-size: 120px 105px;
-    }
+        line-height: 100px;
+        .logo{
+            display: block;
+            text-indent: -9999px;
+            width: 120px;
+            height: 100px;
+            background: url(/img/logo_club.svg);
+            background-size: 120px 105px;
+        }
 
-    .button-collapse {
-        margin: 18px;
+        .button-collapse {
+            margin: 18px;
+        }
     }
 }
