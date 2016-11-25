@@ -22,6 +22,9 @@
             </nav>
         </div>
         <ul class="side-nav" id="mobile-demo">
+            <li>
+                <a class="black-text" click.delegate="collapseNav()" href.bind="route.href" href="#/">Home</a>
+            </li>
             <li repeat.for="route of router.navigation">
                 <a class="black-text" click.delegate="collapseNav()" href.bind="route.href">${route.title}</a>
             </li>
