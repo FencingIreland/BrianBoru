@@ -3,6 +3,7 @@ import {routes} from './app-routes';
 
 export class App {
   router : Router;
+  sideNav : any;
 
   configureRouter(config: RouterConfiguration, router: Router): void {
     this.router = router;
@@ -11,6 +12,11 @@ export class App {
   }
 
   attached(){
-    $('.button-collapse').sideNav();
+    $(this.sideNav).sideNav();
+  }
+
+  collapseNav() {
+    $(this.sideNav).sideNav('hide');
+    return true;
   }
 }
