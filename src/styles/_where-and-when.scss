@@ -12,3 +12,13 @@
         height: 100% !important;
     }
 }
+
+.schedule-table{
+    tr td,th{
+        vertical-align: baseline;
+        padding: 5px;
+        p {
+            margin: 5px;
+        }
+    }
+}
