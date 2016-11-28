@@ -5,5 +5,5 @@ export const routes : RouteConfig[] = [
   { route: 'membership', name: 'membership', moduleId: 'membership/membership', nav: true, title: 'Membership'},
   { route: 'courses-and-lessons', name: 'classes', moduleId: 'classes/classes', nav: true, title: 'Courses and lessons'},
   { route: 'where-and-when', name: 'location', moduleId: 'where-and-when/where-and-when', nav: true, title: 'Where and when'},
-  { route: 'contact-us', name: 'contact-us', moduleId: 'home/home', nav: true, title: 'Contact Us'}
+  { route: 'contact-us', name: 'contact-us', moduleId: 'contact-us/contact-us', nav: true, title: 'Contact Us'}
 ];
