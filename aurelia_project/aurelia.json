@@ -138,9 +138,7 @@
             "path": "../node_modules/materialize-css/dist",
             "main": "js/materialize.amd",
             "deps": ["jquery", "hammerjs"],
-            "resources": [
-                "css/materialize.css"
-            ]
+            "resources": []
           },
           {
             "name": "lodash",
